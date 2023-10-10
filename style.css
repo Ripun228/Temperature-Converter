@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(109, 109, 150);
+}
+
+.center-box-shadow
+{
+    margin-top:20vh ;
+    background-color: rgb(70, 70, 102) ;
+    height: 55vh;
+    width: 350px;
+    border-radius: 8%;
+    box-shadow: inset 3px 2px 5px rgb(165, 164, 231), inset -2px -2px 5px rgb(173, 172, 226);
+}
+
+.main-section
+{
+    position: relative;
+    padding: 15px;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap:5vh;
+}
+
+.input-values{
+    width: 250px;
+    height: 7vh;
+    outline: none;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.input-values::placeholder{
+    font-weight: 700;
+    font-size: larger;
+}
+.rounded-mx
+{
+    border-radius: 105px;
+}
+
+.rounded-md
+{
+    border-radius: 1.2rem;
+}
+
+h3{
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button{
+    cursor: pointer;
+    font-weight: 600;
+    width: 120px;
+    height: 7vh;
+    outline: none;
+    border: 2px solid  rgb(85, 85, 151);
+    transition:all 0.4s;
+
+    
+}
+.button:hover{
+    color: white;
+    background-color: rgb(85, 85, 151);
+    box-shadow: 2px 2px 5px rgb(49, 49, 68),-2px -2px 5px rgb(27, 27, 37);
+}
+
+abbr
+{
+    cursor: pointer;
+    position: relative;
+    border-radius: 2px solid white ;
+}
+
+abbr:hover::after{
+    position: absolute;
+    display: block;
+    border-radius: 8px;
+    width: 90px;
+    padding: 5px;
+    font-size: medium;
+    color: white;
+    border: 2px solid rgb(80, 79, 100) ;
+    background-color:rgb(105, 104, 141) ;
+    content: attr(title);
+}
+.transparent-btn
+{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#swap{
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+.s-input
+{
+    color: white;
+    font-weight: 800;
+}
+.s-input i
+{
+    margin-left: 5px;
+    color: white;
+}
+
+input:disabled{
+    background-color: white;
+    font-weight: 700;
+    cursor:no-drop;
+}

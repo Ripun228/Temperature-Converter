@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="flex">
+    <div class="center-box-shadow flex">
+        <section class="main-sec grid">
+            <h3>Temperature Converter</h3>
+            <section class="flex s-input">
+                <input class="input-values rounded-mx" id="celsius-input" type="number" value="" placeholder="0° C" required/>
+                <div class="temp-indicators-c"><span>°</span><i class="fa-solid fa-c"></i></div>
+            </section>
+            <section class="flex s-input">
+                <input class="input-values rounded-mx" id="fahrenheit-input" type="number" value="" placeholder="32° F" required/>
+                <div class="temp-indicators-f"><span>°</span><i class="fa-solid fa-f"></i></div>
+            </section>
+            <section class="flex">
+                <button type="submit" class="button rounded-md">Convert</button> 
+                <button class="transparent-btn" id="swap"><abbr title="°C to °F"><i class="fa-solid fa-retweet"></i></abbr></button>
+            </section>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
